@@ -2,59 +2,104 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Онлайн чат</title>
+  <title>Приватный чат</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
     }
-    .box {
-      background: #fff;
+    .card {
+      background: #ffffff;
       padding: 25px;
-      max-width: 360px;
+      max-width: 380px;
       width: 100%;
-      border-radius: 12px;
+      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 0.6s ease;
     }
     h1 {
-      font-size: 20px;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #ff4757;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
       margin-bottom: 10px;
     }
     p {
       font-size: 14px;
       color: #555;
+      margin-bottom: 15px;
+    }
+    ul {
+      text-align: left;
+      font-size: 14px;
+      color: #444;
+      padding-left: 18px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 6px;
     }
     button {
-      margin-top: 20px;
       width: 100%;
-      padding: 14px;
-      background: #2d89ef;
+      padding: 15px;
+      background: #2ed573;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       color: white;
       font-size: 16px;
+      font-weight: bold;
       cursor: pointer;
+    }
+    button:hover {
+      background: #28c76f;
+    }
+    .note {
+      margin-top: 12px;
+      font-size: 11px;
+      color: #888;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(10px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
 
-<div class="box">
-  <h1>Онлайн-общение</h1>
-  <p>Для продолжения подтвердите вход</p>
+<div class="card">
+  <div class="badge">Онлайн сейчас</div>
+  <h1>Приватное общение</h1>
+  <p>Доступ открыт для пользователей из вашего региона</p>
+
+  <ul>
+    <li>💬 Живое общение</li>
+    <li>🔒 Конфиденциально</li>
+    <li>⚡ Быстрый вход</li>
+  </ul>
+
   <button onclick="go()">Продолжить</button>
+
+  <div class="note">
+    Нажимая «Продолжить», вы подтверждаете согласие на переход
+  </div>
 </div>
 
 <script>
 function go() {
-  window.location.href = "https://www.effectivegatecpm.com/n01c2502s?key=803c5aa46092f6f27c894d2a951c100a";
+  window.location.href = "ВСТАВЬ_ТУТ_ССЫЛКУ_ADSTERRA";
 }
 </script>
 
